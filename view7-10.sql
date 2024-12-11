@@ -1,16 +1,3 @@
-
-CREATE VIEW InfoAkunTersedia AS
-SELECT Email, Status
-FROM Akun
-WHERE Status = 'Tersedia'
-
-
-CREATE VIEW InfoAkunPenuh AS
-SELECT Email, Status
-FROM Akun
-WHERE Status = 'Penuh'
-
-
 CREATE VIEW NamaPaketdiAmbil AS
 SELECT UserInfo.Nama,NoHp, Paket.NamaPaket, Durasi, Harga
 FROM UserInfo
@@ -32,7 +19,3 @@ CREATE VIEW JumlahUser AS
 SELECT InfoAkun.AkunId, JumlahUser
 FROM InfoAkun
 WHERE JumlahUser = '5'
-
-
-
-
